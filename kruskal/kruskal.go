@@ -60,7 +60,7 @@ func quicksort(A []edge, low, high int) {
 	}
 }
 
-func sort(A []edge) {
+func Sort(A []edge) {
 	quicksort(A, 0, len(A)-1)
 }
 
@@ -90,7 +90,7 @@ func Kruskal(testnum int) int {
 		edges[i] = edge{v1, v2, weight}
 	}
 
-	sort(edges)
+	Sort(edges)
 
 	total := 0
 	for _, edge := range edges {
